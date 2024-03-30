@@ -21,6 +21,7 @@ export default function Dashboard() {
     const unsubscribe = onSnapshot(
       q,
       (snapshot) => {
+        // * The main Firestore query logic happens here!
         // Obtain array of documents from snapshot
         const docs = snapshot.docs;
         // Map the array of documents to an array of PetWithId objects
